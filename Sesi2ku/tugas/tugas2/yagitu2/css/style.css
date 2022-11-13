@@ -1,0 +1,85 @@
+body{
+    background-color: #dfe2ee;
+}
+nav{
+    margin: auto;
+    text-align: right;
+}
+#profile{/* # digunakan untuk 'id=' */
+    display: flex;
+    background-color: white;
+    margin: 40px;
+    padding: 24px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px 3px rgba(191,191,191,0.33);
+    -webkit-box-shadow: 0px 0px 5px 3px rgba(191,191,191,0.33);
+    -moz-box-shadow: 0px 0px 5px 3px rgba(191,191,191,0.33);
+}
+#form-input{
+    display: flex;
+    background-color: white;
+    margin: 40px;
+    padding: 24px;
+    border-radius: 4px;
+    
+}
+#image{
+    flex: 1;
+}
+.profile-image{/* . digunakan untk 'class' */
+    width: 100%;
+    border-radius: 50%;
+}
+#name{
+    flex: 2;
+    padding-left: 16px;
+    border-right: 3px solid #cfcfcf;
+}
+#name p{
+    font-family: Arial, Helvetica, sans-serif;
+    color:grey;
+}
+#detail{
+    flex: 4;
+    padding-left: 16px;
+}
+.display-flex{
+    display: flex;
+}
+.btn-kontak{
+    margin-right: 16px;
+}
+td{
+    padding: 4px;
+}
+#table-c2{
+    border: 0px solid;
+    width: 100%;
+}
+#td-c2{
+    border: 1px #cdc6c6 solid;
+    width: 100%;
+}
+
+@media(max-width: 576px){ /* agar responsive */
+    #profile{
+        flex-direction: column;
+    }
+    #name{
+        border: none;
+        text-align: center;
+        padding-left: 0;
+    }
+    .display-flex{
+        justify-content: center;
+    }
+    /* table{
+        margin: auto;
+        padding-top: 20px; 
+    } */
+    #detail{
+        margin: auto;
+        padding-top: 20px;
+        padding-left: 0;
+    }
+}
